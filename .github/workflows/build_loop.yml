@@ -53,10 +53,12 @@ jobs:
           # Module: LoopKit
           # Folder: LoopKit/LoopKit/Insulin/
           # Filename: ExponentialInsulinModelPreset.swift
+
           # Exponential Insulin Curve -> lyumjev, actionDuration 300, peakActivity 45
-          # curl https://github.com/ViTuDia/LoopKit/commit/81d672ed0a530672207e56fa7c65c5c2006502e8.patch | git apply -v --directory=LoopKit
+          curl https://github.com/ViTuDia/LoopKit/commit/81d672ed0a530672207e56fa7c65c5c2006502e8.patch | git apply -v --directory=LoopKit
+
           # Exponential Insulin Curve -> lyumjev, actionDuration 330, peakActivity 45
-          curl https://github.com/ViTuDia/LoopKit/commit/139ab43f3af5e691ba438cc6f4acae740f23635d.patch | git apply -v --directory=LoopKit
+          # curl https://github.com/ViTuDia/LoopKit/commit/139ab43f3af5e691ba438cc6f4acae740f23635d.patch | git apply -v --directory=LoopKit
 
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
