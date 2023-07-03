@@ -38,13 +38,13 @@ jobs:
           #   the line following a "\" cannot be blank - that causes the Action to never complete
           /bin/bash -c "$(curl -fsSL \
           https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)" \
+          2002 \
           omnipod_cage \
           dexcom_sage \
           dexcom_upload_readings \
           future_carbs_4h \
-          customtypeone_looppatches \
-          2002 \
-          algorithm_experiments
+          algorithm_experiments \
+          customtypeone_looppatches
 
           # the final customization listed above CANNOT have a continuation character "\"
           # more customizations can be pasted after this line
