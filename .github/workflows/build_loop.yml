@@ -49,16 +49,16 @@ jobs:
           # the final customization listed above CANNOT have a continuation character "\"
           # more customizations can be pasted after this line
 
-          # Submodule LoopKit patches
+          # Submodule LoopKit patches:
           # Module: LoopKit
           # Folder: LoopKit/LoopKit/Insulin/
           # Filename: ExponentialInsulinModelPreset.swift
 
           # Exponential Insulin Curve -> lyumjev, actionDuration 300, peakActivity 45
-          curl https://github.com/ViTuDia/LoopKit/commit/721bd6b1848627afcb2d2cafe65f68eb30f721ba.patch | git apply -v --directory=LoopKit
+          #curl https://github.com/ViTuDia/LoopKit/commit/721bd6b1848627afcb2d2cafe65f68eb30f721ba.patch | git apply --directory=LoopKit -v --whitespace=fix
 
           # Exponential Insulin Curve -> lyumjev, actionDuration 330, peakActivity 45
-          # curl https://github.com/ViTuDia/LoopKit/commit/ed4017c087669514575147f8362c607ac42ab1f5.patch | git apply -v --directory=LoopKit
+          curl https://github.com/ViTuDia/LoopKit/commit/ed4017c087669514575147f8362c607ac42ab1f5.patch | git apply --directory=LoopKit -v --whitespace=fix
 
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
