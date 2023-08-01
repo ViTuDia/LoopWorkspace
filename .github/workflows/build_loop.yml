@@ -43,7 +43,6 @@ jobs:
           dexcom_upload_readings \
           future_carbs_4h \
           high_carb_limit \
-          customtypeone_looppatches \
           2002 \
           algorithm_experiments
 
