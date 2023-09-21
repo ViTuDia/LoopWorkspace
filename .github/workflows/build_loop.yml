@@ -56,10 +56,11 @@ jobs:
 
           # Exponential Insulin Curve -> lyumjev, actionDuration 300, peakActivity 45
           #curl https://github.com/ViTuDia/LoopKit/commit/721bd6b1848627afcb2d2cafe65f68eb30f721ba.patch | git apply --directory=LoopKit -v --whitespace=fix
-
           # Exponential Insulin Curve -> lyumjev, actionDuration 330, peakActivity 45
-          curl https://github.com/ViTuDia/LoopKit/commit/ed4017c087669514575147f8362c607ac42ab1f5.patch | git apply --directory=LoopKit -v --whitespace=fix
-
+          #curl https://github.com/ViTuDia/LoopKit/commit/ed4017c087669514575147f8362c607ac42ab1f5.patch | git apply --directory=LoopKit -v --whitespace=fix
+          # Exponential Insulin Curve -> lyumjev, actionDuration 420, peakActivity 45
+          curl https://github.com/ViTuDia/LoopKit/commit/1d53de3552d38a2d205610b3601ef6b04c68464e.patch | git apply --directory=LoopKit -v --whitespace=fix
+      
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: find /usr/local/lib/ruby/gems -name table_printer.rb | xargs sed -i "" "/puts(Terminal::Table.new(params))/d"
