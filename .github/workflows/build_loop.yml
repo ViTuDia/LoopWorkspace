@@ -261,7 +261,6 @@ jobs:
           /bin/bash -c "$(curl -fsSL \
           https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)" \
           omnipod_cage \
-          dexcom_sage \
           dexcom_upload_readings \
           future_carbs_4h \
           high_carb_limit \
