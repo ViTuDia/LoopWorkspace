@@ -260,6 +260,7 @@ jobs:
           #   the line following a "\" cannot be blank - that causes the Action to never complete
           /bin/bash -c "$(curl -fsSL \
           https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)" \
+          dexcom_upload_readings \
           future_carbs_4h \
           high_carb_limit \
           2002
