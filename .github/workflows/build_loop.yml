@@ -43,6 +43,7 @@ jobs:
           dexcom_upload_readings \
           future_carbs_4h \
           high_carb_limit \
+          now_line \
           2002 \
           algorithm_experiments
 
